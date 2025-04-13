@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好</title>
+<style>
+    /* 111 */
+    button
+    {
+       font-size: 25px;
+        color: rgb(25, 144, 241);
+        height: 150px;
+        width: 250px;
+        border-radius: 10px;
+        border: 0px white solid;
+        background-color: white;
+    }
+    .see
+    {
+       
+        background-color: white;
+position: absolute;
+width: 50%;
+height: 40%;
+border-radius: 10px;
+display: none;
+  }
+  .ns
+  {
+    background-color: white;
+position: absolute;
+width: 50%;
+height: 40%;
+border-radius: 10px;
+    display: block;
+  }
+ h2
+ {
+text-align: center;
+color: rgb(30, 179, 253);
+margin-bottom: 5%;
+
+ }
+ p
+ {
+    text-align: center;
+    margin-top: 4%;
+ }
+  
+    .all{height: 100%; display: flex;
+       align-items: center;
+       justify-content: center;
+    position: relative;}
+    html,
+    body
+    {
+      background-color: rgb(99, 177, 249);
+        height: 100%;
+    }
+    .icon
+    {
+        background-image: url(最小化.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        height: 50px;
+        width: 50px;
+      position: absolute;
+      right: -10px;
+      top: 10px;
+      transition:background-color 1s linear ;
+    }
+   
+</style>
+   
+</head>
+<body>
+   <div class="all">
+    
+    <button class="one">你好呀(‵▽′)</button>
+  
+    <div class="see">
+       <div class="icon" title="其实这个图标没实际意义本人不会写关闭的程序"></div>
+        <h2>谢谢你能点开这个网站! (*ﾟ▽ﾟ*)</h2>
+        <p>认识你很高兴!</p>
+        <p>希望你能一直开开心心的</p>
+        <p>再见!</p>
+    
+    </div>
+</div>
+</body>
+<script>
+
+
+var se=document.getElementsByClassName('see');
+var user=document.getElementsByTagName('button');
+var n1=document.getElementsByTagName('h2');
+var n2=document.getElementsByTagName('p');
+var ic=document.getElementsByClassName('icon');
+var di=document.getElementsByTagName('div')
+
+
+user[0].onclick=function()
+{
+if(se[0].className=='see')
+{
+    user[0].style.display='none';
+    se[0].className='ns';
+}else
+{
+    se[0].className='see';
+}
+}
+ic[0].onclick=function()
+{
+ if(se[0].className=='ns')
+ {
+    se[0].className='se';
+    user[0].style.display='block';
+ }else
+ {
+    se[0].className='ns';
+ }
+}
+
+</script>
+</html>
